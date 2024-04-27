@@ -26,6 +26,10 @@
 3.  提交代码
 4.  新建 Pull Request
 
+工作区代码 
+-> （git add xxx） 暂存区 
+-> （git commit -m 'msg'） 版本库 
+-> (git push [远程仓库名] [本地分支名]:[远程分支名]) 代码仓库
 
 #### 特技
 
