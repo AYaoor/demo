@@ -1,0 +1,21 @@
+version: "3.2"
+
+services:
+  nacos:
+    image: nacos/nacos-server
+    environment:
+      MODE: standalone
+    ports:
+      - "8848:8848"
+  gateway:
+    build: ./gateway-service
+    ports:
+      - "88:88"
+  extra-service:
+    build: ./extra-service
+  order-service:
+    build: ./order-service
+  ledger-service:
+    build: ./ledger-service
+  notepad-service:
+    build: ./notepad-service
